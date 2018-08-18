@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PocketXaf.Win.ImmediateDateActionExecute.SourcePackage</id>
+    <version>$version$</version>
+    <authors>Sergej Derjabkin</authors>
+    <owners>SenDev GmbH</owners>
+    <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SenDevGmbH/XafTools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Immediate Date Action Execute Controller</description>
+    <tags>DevExpress XAF</tags>
+  </metadata>
+  <files>
+    <file src="*.cs" target="content\App_Packages\PocketXaf.Win.ImmediateDateActionExecute.$version$" />
+  </files>
+</package>
