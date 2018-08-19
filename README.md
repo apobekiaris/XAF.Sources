@@ -6,7 +6,7 @@ Usually creating packages for the the DevExpress .Net components comes with a ne
 
 This way of packaging allows us not to deal with different DevExpress versions, since breaking changes are quite rare in the DevExpress libraries. Also source code packages can be installed by users, how using self-compiled  DevExpress libraries.
 
-This approach make also contribution much easier. Potential contributors don't have to compile the packages locally, they can simply change the source code in their projects and then copy it to their forks and provide us pull requests. However, please have in mind, that the contents of App_Packages folder can be overwritten on package updates.
+This approach make also contribution much easier. Potential contributors don't have to compile the packages locally, they can simply change the source code in their projects and then copy it to their forks and provide us pull requests. 
 
 ## How this works
 
@@ -56,3 +56,9 @@ Now the build script will automatically build Your package.
 
 
 # Building packages
+
+To build packages type following command in the `src` folder:
+```Powershell
+msbuild build.proj /t:NuGet
+```
+

@@ -21,7 +21,7 @@
   <Target Name="NuGet" DependsOnTargets="IncreaseVersion" Inputs="@(NugetFile)" Outputs="EmptyOutput">
     <MakeDir Directories="bin\nuget"/>
     <XslTransformation XmlInputPaths="%(NugetFile.Identity)" OutputPaths="%(NugetFile.RelativeDir)\%(NugetFile.FileName).Transformed.nuspec" XslInputPath="NuspecTransform.xslt"/>
-    <Exec ContinueOnError="false" Command="$(NuGetTool) pack %(NugetFile.RelativeDir)\%(NugetFile.FileName).Transformed.nuspec -BasePath $(MSBuildProjectDirectory) -OutputDirectory bin\NuGet -Version $(Version)  -BasePath %(NugetFile.RelativeDir)"/>
+    <Exec ContinueOnError="false" Command="$(NuGetTool) pack %(NugetFile.RelativeDir)\%(NugetFile.FileName).Transformed.nuspec -OutputDirectory bin\NuGet -Version $(Version)  -BasePath %(NugetFile.RelativeDir)"/>
      <Delete Files="%(NugetFile.RelativeDir)\%(NugetFile.FileName).Transformed.nuspec"/> 
   </Target>
 </Project>
