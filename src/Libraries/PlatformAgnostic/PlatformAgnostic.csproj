@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="SourcePackages\CSharpEvaluator\CSharpEvaluator.nuspec" />
     <None Include="SourcePackages\ObjectScripting\ObjectScripting.nuspec" />
     <None Include="SourcePackages\OneTimeMethod\OneTimeMethod.nuspec" />
   </ItemGroup>

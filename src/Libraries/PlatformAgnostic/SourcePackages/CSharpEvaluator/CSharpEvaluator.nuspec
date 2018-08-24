@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>PocketXaf.CSharpEvaluator.SourcePackage</id>
+    <version>$version$</version>
+    <authors>Sergej Derjabkin</authors>
+    <owners>SenDev GmbH</owners>
+    <licenseUrl>http://www.sendev.de</licenseUrl>
+    <projectUrl>http://www.sendev.de</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Script object controller</description>
+    <tags>XAF</tags>
+    <dependencies>
+      <dependency id="Fasterflect" />
+    </dependencies>
+  </metadata>
+  
+  <files>
+    <file src="*.cs" target="content\App_Packages\PocketXaf.CSharpEvaluator.SourcePackage.$version$" />
+  </files>
+</package>
