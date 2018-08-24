@@ -35,6 +35,9 @@
     <Reference Include="DevExpress.ExpressApp.v18.1, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Persistent.BaseImpl.v18.1, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Xpo.v18.1, processorArchitecture=MSIL" />
+    <Reference Include="Fasterflect, Version=2.1.3.0, Culture=neutral, PublicKeyToken=38d18473284c1ca7, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\fasterflect.2.1.3\lib\net40\Fasterflect.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SourcePackages\CSharpEvaluator\CSharpEvaluator.cs" />
     <Compile Include="SourcePackages\ObjectScripting\IgnoreInScriptingAttribute.cs" />
     <Compile Include="SourcePackages\OneTimeMethod\OneTimeMethodAttribute.cs" />
     <Compile Include="SourcePackages\ObjectScripting\ScriptingResult.cs" />
@@ -57,6 +61,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config" />
     <None Include="SourcePackages\ObjectScripting\ObjectScripting.nuspec" />
     <None Include="SourcePackages\OneTimeMethod\OneTimeMethod.nuspec" />
   </ItemGroup>
