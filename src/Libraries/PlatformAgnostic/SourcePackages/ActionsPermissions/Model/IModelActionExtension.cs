@@ -1,0 +1,16 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PocketXAF.ActionsPermissions.Model
+{
+    public interface IModelActionExtension
+    {
+        [DefaultValue(false)]
+        [Category("Permission")]
+        bool EnablePermissionToAction { get; set; }
+    }
+}
