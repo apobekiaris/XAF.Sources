@@ -72,7 +72,6 @@
     <Compile Include="SourcePackages\ActionsPermissions\Interfaces\IPermissionPolicyRoleWithActions.cs" />
     <Compile Include="SourcePackages\ActionsPermissions\Interfaces\IRoleActionPermission.cs" />
     <Compile Include="SourcePackages\ActionsPermissions\Model\IModelActionExtension.cs" />
-    <Compile Include="SourcePackages\CSharpEvaluator\CSharpEvaluator.cs" />
     <Compile Include="SourcePackages\ObjectScripting\IgnoreInScriptingAttribute.cs" />
     <Compile Include="SourcePackages\OneTimeMethod\OneTimeMethodAttribute.cs" />
     <Compile Include="SourcePackages\ObjectScripting\ScriptingResult.cs" />
@@ -86,8 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="SourcePackages\CSharpEvaluator\CSharpEvaluator.nuspec" />
-    <None Include="SourcePackages\ObjectScripting\ObjectScripting.nuspec" />
+    <None Include="SourcePackages\ActionsPermissions\ActionsPermissions.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="SourcePackages\OneTimeMethod\OneTimeMethod.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

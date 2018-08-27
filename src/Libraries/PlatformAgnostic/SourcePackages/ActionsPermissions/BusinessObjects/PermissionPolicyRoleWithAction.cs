@@ -34,7 +34,7 @@ namespace PocketXAF.ActionsPermissions.BusinessObjects
 		[VisibleInListView(false)]
 		[VisibleInLookupListView(false)]
 		[ModelDefault(nameof(IModelMember.Caption), "Action Infos")]
-		public IReadOnlyCollection<SecurableActionInfo> ActionInfos => helper.ActionInfos;
+		public IEnumerable<SecurableActionInfo> ActionInfos => helper.ActionInfos;
 
 		IEnumerable<IRoleActionPermission> IPermissionPolicyRoleWithActions.ActionPermissions => ActionPermissions;
 

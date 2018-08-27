@@ -14,8 +14,8 @@ namespace PocketXAF.ActionsPermissions.BusinessObjects
 
 		public IPermissionPolicyRoleWithActions Role { get; }
 
-		private IReadOnlyCollection<SecurableActionInfo> actionInfos;
-		public IReadOnlyCollection<SecurableActionInfo> ActionInfos
+		private IEnumerable<SecurableActionInfo> actionInfos;
+		public IEnumerable<SecurableActionInfo> ActionInfos
 		{
 			get
 			{
