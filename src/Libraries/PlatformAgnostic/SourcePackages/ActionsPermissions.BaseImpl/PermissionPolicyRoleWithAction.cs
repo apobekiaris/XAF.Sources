@@ -4,11 +4,12 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl.PermissionPolicy;
 using DevExpress.Xpo;
+using PocketXAF.ActionsPermissions.BusinessObjects;
 using PocketXAF.ActionsPermissions.Interfaces;
 
-namespace PocketXAF.ActionsPermissions.BusinessObjects
+namespace PocketXAF.ActionsPermissions.BaseImpl
 {
-	[NavigationItem("Administration")]
+	[NavigationItem]
 	[ModelDefault(nameof(IModelClass.Caption), "Roles")]
 	[MapInheritance(MapInheritanceType.ParentTable)]
 	public class PermissionPolicyRoleWithAction : PermissionPolicyRole, IPermissionPolicyRoleWithActions

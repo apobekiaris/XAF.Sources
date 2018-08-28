@@ -19,7 +19,7 @@ namespace PocketXAF.ActionsPermissions.Controllers
 
             var actions = View.Model.Application.ActionDesign.Actions
                             .OfType<IModelActionExtension>()
-                            .Where(a => a.EnablePermissionToAction)
+                            .Where(a => a.EnablePermissions)
                             .Cast<IModelAction>().ToList();
 
             foreach (Controller controller in Frame.Controllers)

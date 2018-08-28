@@ -10,7 +10,7 @@ namespace PocketXAF.ActionsPermissions.Model
     public interface IModelActionExtension
     {
         [DefaultValue(false)]
-        [Category("Permission")]
-        bool EnablePermissionToAction { get; set; }
+        [Category("Permissions")]
+        bool EnablePermissions { get; set; }
     }
 }

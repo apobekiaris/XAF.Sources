@@ -34,7 +34,7 @@ namespace PocketXAF.ActionsPermissions.BusinessObjects
 		private SecurableActionInfo actionInfo;
 		[NonPersistent]
 		[VisibleInLookupListView(false)]
-		[ModelDefault(nameof(IModelMember.Caption), "Aktion")]
+		[ModelDefault(nameof(IModelMember.Caption), "Action")]
 		[DataSourceProperty("Role.ActionInfos")]
 		public SecurableActionInfo ActionInfo
 		{

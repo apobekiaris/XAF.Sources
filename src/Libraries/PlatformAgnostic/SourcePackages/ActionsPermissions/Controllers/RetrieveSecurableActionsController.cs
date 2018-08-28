@@ -51,7 +51,7 @@ namespace PocketXAF.ActionsPermissions.Controllers
 		{
 			e.ActionInfos = View.Model.Application.ActionDesign.Actions
 				.OfType<IModelActionExtension>()
-				.Where(a => a.EnablePermissionToAction)
+				.Where(a => a.EnablePermissions)
 				.Cast<IModelAction>()
 				.Select(a => CreateActionInfo(a));
 		}
