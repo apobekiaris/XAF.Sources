@@ -12,7 +12,7 @@ namespace PocketXAF.ActionsPermissions
 
 		public override bool IsGranted(ExecuteActionPermissionRequest permissionRequest)
 		{
-			return ((PermissionPolicyUser)SecuritySystem.CurrentUser).Roles.OfType<IPermissionPolicyRoleWithActions>().Any(role =>
+			return ((IPermissionPolicyUser)SecuritySystem.CurrentUser).Roles.OfType<IPermissionPolicyRoleWithActions>().Any(role =>
 			{
 				var action = role.ActionPermissions.FirstOrDefault(r => r.ActionId == permissionRequest.ActionId);
 				return (action != null) ? action.PermissionState == SecurityPermissionState.Allow : role.PermissionPolicy == SecurityPermissionPolicy.AllowAllByDefault;

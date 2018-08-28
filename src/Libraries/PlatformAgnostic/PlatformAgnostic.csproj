@@ -57,9 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SourcePackages\ActionsPermissions\BusinessObjects\PermissionPolicyRoleWithAction.cs" />
+    <Compile Include="SourcePackages\ActionsPermissions.BaseImpl\PermissionPolicyRoleWithAction.cs" />
+    <Compile Include="SourcePackages\ActionsPermissions\ActionsPermissionsModule.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="SourcePackages\ActionsPermissions\BusinessObjects\RetrieveActionInfosEventArgs.cs" />
-    <Compile Include="SourcePackages\ActionsPermissions\BusinessObjects\RoleActionPermission.cs" />
+    <Compile Include="SourcePackages\ActionsPermissions.BaseImpl\RoleActionPermission.cs" />
     <Compile Include="SourcePackages\ActionsPermissions\BusinessObjects\RoleActionPermissionBase.cs" />
     <Compile Include="SourcePackages\ActionsPermissions\BusinessObjects\RoleWithActionsHelper.cs" />
     <Compile Include="SourcePackages\ActionsPermissions\BusinessObjects\SecurableActionInfo.cs" />
@@ -85,10 +88,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="SourcePackages\ActionsPermissions\ActionsPermissions.nuspec">
+    <None Include="SourcePackages\ActionsPermissions\ActionsPermissions.nuspec" />
+    <None Include="SourcePackages\ActionsPermissions.BaseImpl\ActionsPermissions.BaseImpl.nuspec">
       <SubType>Designer</SubType>
     </None>
     <None Include="SourcePackages\OneTimeMethod\OneTimeMethod.nuspec" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

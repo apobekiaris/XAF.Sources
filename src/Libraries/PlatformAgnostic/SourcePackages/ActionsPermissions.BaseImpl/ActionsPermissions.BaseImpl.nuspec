@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>PocketXaf.ActionsPermissions.BaseImpl.SourcePackage</id>
+    <version>$version$</version>
+    <authors>Sergej Derjabkin</authors>
+    <owners>SenDev GmbH</owners>
+    <licenseUrl>http://www.sendev.de</licenseUrl>
+    <projectUrl>http://www.sendev.de</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Permissions for Actions</description>
+    <dependencies>
+      <dependency id="PocketXaf.ActionsPermissions.SourcePackage"/>
+    </dependencies>
+    <tags>XAF</tags>
+  </metadata>
+  <files>
+    <file src="**\*.cs" target="content\App_Packages\PocketXaf.ActionsPermissions.BaseImpl.SourcePackage.$version$" />
+  </files>
+</package>
