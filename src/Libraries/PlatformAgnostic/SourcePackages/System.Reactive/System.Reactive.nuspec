@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PocketXaf.System.Reactive</id>
+    <version>$version$</version>
+    <authors>Apostolos Bekiaris</authors>
+    <owners>eXpandFramework</owners>
+    <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SenDevGmbH/XafTools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>StringExtensions</description>
+    <tags>DevExpress XAF</tags>
+  </metadata>
+  <dependencies>
+    <dependency id="PocketXaf.XafApplicationExtensions" version="$version" />
+    <dependency id="System.Reactive" version="4.1.2" />
+  </dependencies>
+  <files>
+    <file src="*.cs" target="content\App_Packages\PocketXaf.System.Reactive.$version$" />
+  </files>
+</package>

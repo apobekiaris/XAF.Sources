@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PocketXaf.EnumExtensions</id>
+    <version>$version$</version>
+    <authors>Apostolos Bekiaris</authors>
+    <owners>eXpandFramework</owners>
+    <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SenDevGmbH/XafTools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>EnumExtensions</description>
+    <tags>DevExpress XAF</tags>
+  </metadata>
+  <files>
+    <file src="*.cs" target="content\App_Packages\PocketXaf.EnumExtensions.$version$" />
+  </files>
+</package>

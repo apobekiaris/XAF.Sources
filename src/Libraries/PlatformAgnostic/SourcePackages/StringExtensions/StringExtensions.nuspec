@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PocketXaf.StringExtensions</id>
+    <version>$version$</version>
+    <authors>Apostolos Bekiaris</authors>
+    <owners>eXpandFramework</owners>
+    <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SenDevGmbH/XafTools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>StringExtensions</description>
+    <tags>DevExpress XAF</tags>
+  </metadata>
+  <files>
+    <file src="*.cs" target="content\App_Packages\PocketXaf.StringExtensions.$version$" />
+  </files>
+</package>

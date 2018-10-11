@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PocketXaf.ConvertExtensions</id>
+    <version>$version$</version>
+    <authors>Apostolos Bekiaris</authors>
+    <owners>eXpandFramework</owners>
+    <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SenDevGmbH/XafTools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ConvertExtensions</description>
+    <tags>DevExpress XAF</tags>
+  </metadata>
+  <dependencies>
+    <dependency id="PocketXaf.EnumExtensions" version="$version" />
+    <dependency id="PocketXaf.StringExtensions" version="$version" />
+  </dependencies>
+  <files>
+    <file src="*.cs" target="content\App_Packages\PocketXaf.ConvertExtensions.$version$" />
+  </files>
+</package>

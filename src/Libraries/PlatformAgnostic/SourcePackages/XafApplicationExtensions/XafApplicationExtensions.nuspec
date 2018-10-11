@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PocketXaf.XafApplicationExtensions</id>
+    <version>$version$</version>
+    <authors>Apostolos Bekiaris</authors>
+    <owners>eXpandFramework</owners>
+    <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SenDevGmbH/XafTools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>XafApplicationExtensions</description>
+    <tags>DevExpress XAF</tags>
+  </metadata>
+  <dependencies>
+    <dependency id="PocketXaf.StreamExtensions" version="$version" />
+    <dependency id="PocketXaf.SystemExtensions" version="$version" />
+    <dependency id="PocketXaf.TypeInfoExtensions" version="$version" />
+  </dependencies>
+  <files>
+    <file src="*.cs" target="content\App_Packages\PocketXaf.XafApplicationExtensions.$version$" />
+  </files>
+</package>
