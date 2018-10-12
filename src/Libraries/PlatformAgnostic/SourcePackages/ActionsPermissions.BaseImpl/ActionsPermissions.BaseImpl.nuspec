@@ -10,7 +10,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Permissions for Actions</description>
     <dependencies>
-      <dependency id="PocketXaf.ActionsPermissions.SourcePackage"/>
+      <dependency id="PocketXaf.ActionsPermissions.SourcePackage" />
     </dependencies>
     <tags>XAF</tags>
   </metadata>

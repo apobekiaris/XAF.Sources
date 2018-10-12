@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>PocketXaf.FrameExtensions</id>
     <version>$version$</version>
@@ -10,10 +10,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Immediate Date Action Execute Controller</description>
     <tags>DevExpress XAF</tags>
+    <dependencies>
+      <dependency id="PocketXaf.ModelExtensions" version="2.0.0.0" />
+    </dependencies>
   </metadata>
-  <dependencies>
-    <dependency id="PocketXaf.ModelExtensions" version="$version" />
-  </dependencies>
   <files>
     <file src="*.cs" target="content\App_Packages\PocketXaf.FrameExtensions.$version$" />
   </files>

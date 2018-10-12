@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package >
+<package>
   <metadata>
     <id>PocketXaf.ConvertExtensions</id>
     <version>$version$</version>
@@ -10,11 +10,11 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>ConvertExtensions</description>
     <tags>DevExpress XAF</tags>
+    <dependencies>
+      <dependency id="PocketXaf.EnumExtensions" version="2.0.0.0" />
+      <dependency id="PocketXaf.StringExtensions" version="2.0.0.0" />
+    </dependencies>
   </metadata>
-  <dependencies>
-    <dependency id="PocketXaf.EnumExtensions" version="$version" />
-    <dependency id="PocketXaf.StringExtensions" version="$version" />
-  </dependencies>
   <files>
     <file src="*.cs" target="content\App_Packages\PocketXaf.ConvertExtensions.$version$" />
   </files>
