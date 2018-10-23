@@ -1,3 +1,9 @@
+[![Build status](https://dev.azure.com/eXpandDevOps/eXpandFramework/_apis/build/status/eXpandFramework-XAF)](https://dev.azure.com/eXpandDevOps/eXpandFramework/_build/latest?definitionId=13)
+[![GitHub stars](https://img.shields.io/github/stars/eXpandFramework/xaf.svg)](https://github.com/eXpandFramework/xaf/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/eXpandFramework/xaf.svg)](https://github.com/eXpandFramework/xaf/issues)
+[![GitHub forks](https://img.shields.io/github/forks/eXpandFramework/xaf.svg)](https://github.com/eXpandFramework/xaf/network)
+
+
 # Introduction
 
 We started this project, because we want provide compact and low dependency components for the XAF framework. 
