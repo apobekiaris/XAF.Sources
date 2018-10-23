@@ -4,7 +4,7 @@ properties {
     $nugetBin="$PSScriptRoot\..\bin\nuget\"
     $version=$null
     $nuspecFiles=$null
-    $msbuild=FindMSBuild
+    $msbuild=$null
     $cleanBin=$null
 }
 
@@ -76,8 +76,14 @@ Task PackNuspec{
         
     }
 }
-
-task default  -depends Clean ,Compile ,UpdateNuspecMetadata,PackNuspec
+Task DiscoverMSBuild{
+    Exec{
+        if (!$msbuild){
+            $msbuild=FindMSBuild
+        }
+    }
+}
+task default  -depends DiscoverMSBuild,Clean ,Compile ,UpdateNuspecMetadata,PackNuspec
 
 function FindMSBuild() {
     if (!(Get-Module -ListAvailable -Name VSSetup)) {

@@ -4,7 +4,8 @@ param(
     $filter="*.nuspec",
     [Parameter(ValueFromPipeline = $true)]
     [object[]]
-    $nuspecFiles=(Get-ChildItem $PSScriptRoot $filter -Recurse)
+    $nuspecFiles=(Get-ChildItem $PSScriptRoot $filter -Recurse),
+    $msbuild=$null
 )
 Import-Module ..\tools\psake\psake.psm1
-Invoke-psake .\Build.ps1 -properties @{"nuspecFiles"=$nuspecFiles;"version"=$version;"cleanBin"=($filter -eq "*.nuspec")}
+Invoke-psake .\Build.ps1 -properties @{"nuspecFiles"=$nuspecFiles;"version"=$version;"cleanBin"=($filter -eq "*.nuspec");"msbuild"=$msbuild}
