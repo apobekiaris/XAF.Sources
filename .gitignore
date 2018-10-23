@@ -333,3 +333,4 @@ ASALocalRun/
 
 #transformed .nuspec files
 *.transformed.nuspec
+/src/DLL/
