@@ -8,7 +8,7 @@
     <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/SenDevGmbH/XafTools</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>StringExtensions</description>
+    <description>System.Reactive.Win</description>
     <tags>DevExpress XAF</tags>
     <dependencies>
       <dependency id="PocketXaf.System.Reactive" version="2.0.0.0" />

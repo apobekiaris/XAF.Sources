@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>PocketXaf.ModelExtensions</id>
-    <version>$version$</version>
+    <version>2.0.0.0</version>
     <authors>Apostolos Bekiaris</authors>
     <owners>eXpandFramework</owners>
     <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
@@ -19,6 +19,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="*.cs" target="content\App_Packages\PocketXaf.ModelExtensions.$version$" />
+    <file src="**\*.cs" target="content\App_Packages\PocketXaf.ModelExtensions.$version$" />
   </files>
 </package>

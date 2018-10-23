@@ -165,15 +165,31 @@
     <None Include="SourcePackages\ConvertExtensions\ConvertExtensions.nuspec" />
     <None Include="SourcePackages\EnumExtensions\EnumExtensions.nuspec" />
     <None Include="SourcePackages\FrameExtensions\FrameExtensions.nuspec" />
-    <None Include="SourcePackages\ModelExtensions\ModelExtensions.nuspec" />
-    <None Include="SourcePackages\NumericExtensions\NumericExtensions.nuspec" />
+    <None Include="SourcePackages\ModelExtensions\ModelExtensions.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SourcePackages\NumericExtensions\NumericExtensions.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="SourcePackages\OneTimeMethod\OneTimeMethod.nuspec" />
-    <None Include="SourcePackages\StreamExtensions\StreamExtensions.nuspec" />
-    <None Include="SourcePackages\StringExtensions\StringExtensions.nuspec" />
-    <None Include="SourcePackages\System.Reactive\System.Reactive.nuspec" />
-    <None Include="SourcePackages\SystemExtensions\SystemExtensions.nuspec" />
-    <None Include="SourcePackages\TypeInfoExtensions\TypeInfoExtensions.nuspec" />
-    <None Include="SourcePackages\ViewExtensions\ViewExtensions.nuspec" />
+    <None Include="SourcePackages\StreamExtensions\StreamExtensions.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SourcePackages\StringExtensions\StringExtensions.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SourcePackages\System.Reactive\System.Reactive.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SourcePackages\SystemExtensions\SystemExtensions.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SourcePackages\TypeInfoExtensions\TypeInfoExtensions.nuspec">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SourcePackages\ViewExtensions\ViewExtensions.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="SourcePackages\XafApplicationExtensions\XafApplicationExtensions.nuspec">
       <SubType>Designer</SubType>
     </None>
