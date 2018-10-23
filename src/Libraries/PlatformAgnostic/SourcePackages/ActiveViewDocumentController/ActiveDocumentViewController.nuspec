@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>PocketXaf.ActiveDocumentViewController</id>
+    <version>2.0.0.0</version>
+    <authors>Apostolos Bekiaris</authors>
+    <owners>eXpandFramework</owners>
+    <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/SenDevGmbH/XafTools</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>ActiveDocumentViewController</description>
+    <tags>DevExpress XAF</tags>
+  </metadata>
+  <files>
+    <file src="**\*.cs" target="content\App_Packages\PocketXaf.ActiveDocumentViewController.$version$" />
+  </files>
+</package>

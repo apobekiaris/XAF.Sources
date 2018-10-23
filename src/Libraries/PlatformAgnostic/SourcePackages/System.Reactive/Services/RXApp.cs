@@ -30,9 +30,9 @@ namespace PocketXaf.SourcePackages.System.Reactive.Services{
             return FrameAssignedToController.WhenFits(viewType, objectType, nesting, isPopupLookup);
         }
 
-//        public static IObservable<View> ActiveViewChanged => FrameAssignedToController.SelectMany(_ => {
-//            return _.GetController<ActiveDocumentViewController>().AsObservable().ActiveViewChanged().Select(pattern => pattern.EventArgs.View);
-//        });
+        public static IObservable<View> ActiveViewChanged => FrameAssignedToController.SelectMany(_ => {
+            return _.GetController<ActiveDocumentViewController>().AsObservable().ActiveViewChanged().Select(pattern => pattern.EventArgs.View);
+        });
 
         public static XafApplication XafApplication{
             get => _xafApplication;

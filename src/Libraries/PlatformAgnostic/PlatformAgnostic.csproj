@@ -108,6 +108,7 @@
     <Compile Include="SourcePackages\ActionsPermissions\Interfaces\IPermissionPolicyRoleWithActions.cs" />
     <Compile Include="SourcePackages\ActionsPermissions\Interfaces\IRoleActionPermission.cs" />
     <Compile Include="SourcePackages\ActionsPermissions\Model\IModelActionExtension.cs" />
+    <Compile Include="SourcePackages\ActiveViewDocumentController\ActiveDocumentViewController.cs" />
     <Compile Include="SourcePackages\EnumExtensions\EnumExtensions.cs" />
     <Compile Include="SourcePackages\ModelExtensions\ModelApplicationBaseExtensions.cs" />
     <Compile Include="SourcePackages\ModelExtensions\ModelNodeExtensions.cs" />
@@ -161,6 +162,7 @@
     <None Include="SourcePackages\ActionsPermissions.BaseImpl\ActionsPermissions.BaseImpl.nuspec">
       <SubType>Designer</SubType>
     </None>
+    <None Include="SourcePackages\ActiveViewDocumentController\ActiveDocumentViewController.nuspec" />
     <None Include="SourcePackages\Base\Base.nuspec" />
     <None Include="SourcePackages\ConvertExtensions\ConvertExtensions.nuspec" />
     <None Include="SourcePackages\EnumExtensions\EnumExtensions.nuspec" />
