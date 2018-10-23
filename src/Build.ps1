@@ -92,7 +92,7 @@ Task PublishNuget{
     Exec{
         if ($nugetApiKey){
             Get-ChildItem -Path $nugetBin -Filter *.nupkg|foreach{
-                & $nugetExe push $_ $nugetApiKey -source https://api.nuget.org/v3/index.json
+                & $nugetExe push $_.FullName $nugetApiKey -source https://api.nuget.org/v3/index.json
             }
         }
     }
