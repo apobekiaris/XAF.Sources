@@ -6,6 +6,7 @@ properties {
     $nuspecFiles=$null
     $msbuild=$null
     $cleanBin=$null
+    $nugetApiKey=$null
 }
 
 task ChangeAssemblyInfo {
@@ -83,7 +84,17 @@ Task DiscoverMSBuild{
         }
     }
 }
-task default  -depends DiscoverMSBuild,Clean ,Compile ,UpdateNuspecMetadata,PackNuspec
+Task PublishNuget{
+    Exec{
+        if ($nugetApiKey){
+            Get-ChildItem -Path $nugetBin -Filter *.nupkg|foreach{
+                & $nugetExe push $_ $nugetApiKey -source https://api.nuget.org/v3/index.json
+            }
+        }
+    }
+}
+
+task default  -depends DiscoverMSBuild,Clean ,Compile ,UpdateNuspecMetadata,PackNuspec,PushNupkg
 
 function FindMSBuild() {
     if (!(Get-Module -ListAvailable -Name VSSetup)) {
