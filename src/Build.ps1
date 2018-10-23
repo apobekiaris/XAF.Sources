@@ -83,6 +83,9 @@ Task DiscoverMSBuild{
         if (!$msbuild){
             $script:msbuild=(FindMSBuild)
         }
+        else{
+            $script:msbuild=$msbuild
+        }
     }
 }
 Task PublishNuget{
