@@ -2,9 +2,10 @@ Framework "4.6"
 properties {
     $nugetExe="$PSScriptRoot\..\tools\Nuget.exe"
     $nugetBin="$PSScriptRoot\..\bin\nuget\"
-    $version="2.0.0.0"
-    $nuspecFiles=Get-ChildItem $PSScriptRoot *.nuspec -Recurse
+    $version=$null
+    $nuspecFiles=$null
     $msbuild=FindMSBuild
+    $cleanBin=$null
 }
 
 task ChangeAssemblyInfo {
@@ -20,11 +21,14 @@ task Compile {
 
 task Clean{
     exec{
-        & $msbuild .\PocketXaf.sln /t:Clean /fl
-        if (! $?) { throw "clean failed" }
-        if (Test-Path $nugetBin){
-            Remove-Item $nugetBin -Force -Recurse
+        if ($cleanBin){
+            & $msbuild .\PocketXaf.sln /t:Clean /fl
+            if (! $?) { throw "clean failed" }
+            if (Test-Path $nugetBin){
+                Remove-Item $nugetBin -Force -Recurse
+            }
         }
+        
         
     }
 }
