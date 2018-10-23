@@ -2,11 +2,11 @@ using System;
 using System.Linq;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Model;
-using PocketXAF.ActionsPermissions.BusinessObjects;
-using PocketXAF.ActionsPermissions.Interfaces;
-using PocketXAF.ActionsPermissions.Model;
+using XAF.ActionsPermissions.BusinessObjects;
+using XAF.ActionsPermissions.Interfaces;
+using XAF.ActionsPermissions.Model;
 
-namespace PocketXAF.ActionsPermissions.Controllers
+namespace XAF.ActionsPermissions.Controllers
 {
 	public class RetrieveSecurableActionsController : ObjectViewController<DetailView, IPermissionPolicyRoleWithActions>
 	{

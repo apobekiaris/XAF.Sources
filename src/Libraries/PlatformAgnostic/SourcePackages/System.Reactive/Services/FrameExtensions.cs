@@ -3,10 +3,10 @@ using System.Reactive.Linq;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.Editors;
-using PocketXaf.SourcePackages.System.Reactive.Extensions;
-using PocketXaf.SourcePackages.ViewExtensions;
+using XAF.SourcePackages.System.Reactive.Extensions;
+using XAF.SourcePackages.ViewExtensions;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Services{
+namespace XAF.SourcePackages.System.Reactive.Services{
     public static class NestedFrameExtensions{
         public static IObservable<TFrame> WhenIsNotOnLookupPopupTemplate<TFrame>(this IObservable<TFrame> source)
             where TFrame : Frame{

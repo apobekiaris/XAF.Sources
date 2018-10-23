@@ -4,9 +4,9 @@ using System.Linq;
 using System.Reactive.Linq;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Editors;
-using PocketXaf.SourcePackages.SystemExtensions;
+using XAF.SourcePackages.SystemExtensions;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Services{
+namespace XAF.SourcePackages.System.Reactive.Services{
     public static class ListPropertyEditorExtensions{
         public static IObservable<ListPropertyEditor> FrameChanged(this IEnumerable<ListPropertyEditor> source){
             return source.ToObservable()

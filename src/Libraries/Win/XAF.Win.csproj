@@ -7,8 +7,8 @@
     <ProjectGuid>{9B9735EC-1452-4220-8943-1C62B987BD93}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PocketXaf.Win</RootNamespace>
-    <AssemblyName>PocketXaf.Win</AssemblyName>
+    <RootNamespace>XAF.Win</RootNamespace>
+    <AssemblyName>XAF.Win</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -77,9 +77,9 @@
     <None Include="SourcePackages\System.Reactive.Win\System.Reactive.Win.nuspec" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PlatformAgnostic\PlatformAgnostic.csproj">
-      <Project>{098F1159-5992-4906-AA8E-8B7E5DC69637}</Project>
-      <Name>PlatformAgnostic</Name>
+    <ProjectReference Include="..\PlatformAgnostic\XAF.csproj">
+      <Project>{098f1159-5992-4906-aa8e-8b7e5dc69637}</Project>
+      <Name>XAF</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Linq;
-using PocketXAF.ActionsPermissions.Interfaces;
+using XAF.ActionsPermissions.Interfaces;
 
-namespace PocketXAF.ActionsPermissions.BusinessObjects
+namespace XAF.ActionsPermissions.BusinessObjects
 {
 	public class RoleWithActionsHelper
 	{

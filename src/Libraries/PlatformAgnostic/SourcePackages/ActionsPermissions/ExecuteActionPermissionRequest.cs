@@ -2,19 +2,19 @@ using System;
 using System.Runtime.Serialization;
 using DevExpress.ExpressApp.Security;
 
-namespace PocketXAF.ActionsPermissions
-{
-	[Serializable]
-	[DataContract]
-    public class ExecuteActionPermissionRequest : IPermissionRequest
-    {
+namespace XAF.SourcePackages.ActionsPermissions {
+    [Serializable]
+    [DataContract]
+    public class ExecuteActionPermissionRequest : IPermissionRequest {
+        public ExecuteActionPermissionRequest(string actionId) {
+            ActionId = actionId;
+        }
 
-		[DataMember]
+        [DataMember]
         public string ActionId { get; set; }
 
-        public ExecuteActionPermissionRequest(string actionId) => ActionId = actionId;
-
-        object IPermissionRequest.GetHashObject() => ActionId.GetHashCode();
+        object IPermissionRequest.GetHashObject() {
+            return ActionId.GetHashCode();
+        }
     }
 }
-	

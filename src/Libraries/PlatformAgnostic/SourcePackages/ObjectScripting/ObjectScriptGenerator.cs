@@ -11,7 +11,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.Xpo;
 using Microsoft.CSharp;
 
-namespace PocketXaf.SourcePackages.ObjectScripting
+namespace XAF.SourcePackages.ObjectScripting
 {
 
 

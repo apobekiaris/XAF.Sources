@@ -2,9 +2,10 @@ using System.Linq;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.Model;
-using PocketXAF.ActionsPermissions.Model;
+using XAF.ActionsPermissions.Model;
+using XAF.SourcePackages.ActionsPermissions;
 
-namespace PocketXAF.ActionsPermissions.Controllers
+namespace XAF.ActionsPermissions.Controllers
 {
 	public class ExecuteActionPermissionController : ViewController, IModelExtender
     {

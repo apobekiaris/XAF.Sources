@@ -3,7 +3,7 @@ using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 using DevExpress.Persistent.Base;
 
-namespace PocketXaf.SourcePackages.ObjectScripting
+namespace XAF.SourcePackages.ObjectScripting
 {
     public class ScriptObjectController : ViewController
     {

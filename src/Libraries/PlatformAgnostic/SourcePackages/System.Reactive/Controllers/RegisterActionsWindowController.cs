@@ -3,7 +3,7 @@ using System.Reactive.Subjects;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Controllers{
+namespace XAF.SourcePackages.System.Reactive.Controllers{
     public class RegisterActionsWindowController:WindowController{
         public static IObservable<Frame> WhenFrameAssigned => FrameAssignedSubject;
         static readonly ReplaySubject<Func<RegisterActionsWindowController, ActionBase[]>> Subject=new ReplaySubject<Func<RegisterActionsWindowController, ActionBase[]>>();

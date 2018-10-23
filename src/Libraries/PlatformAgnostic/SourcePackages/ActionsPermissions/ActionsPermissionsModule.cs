@@ -1,8 +1,9 @@
 ﻿using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Security;
-using PocketXAF.ActionsPermissions;
+using XAF.ActionsPermissions;
+using XAF.SourcePackages.ActionsPermissions;
 
-namespace PocketXAF.ActionsPermissions
+namespace XAF.ActionsPermissions
 {
     public class ActionsPermissionsModule : ModuleBase
     {

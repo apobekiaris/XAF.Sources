@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using DevExpress.Persistent.Base;
-using PocketXAF.ActionsPermissions.BusinessObjects;
+using XAF.ActionsPermissions.BusinessObjects;
 
-namespace PocketXAF.ActionsPermissions.Interfaces
+namespace XAF.ActionsPermissions.Interfaces
 {
     public interface IPermissionPolicyRoleWithActions : IPermissionPolicyRole
 	{

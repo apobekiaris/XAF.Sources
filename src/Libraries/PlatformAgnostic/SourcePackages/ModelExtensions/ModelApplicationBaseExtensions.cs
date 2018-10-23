@@ -4,10 +4,10 @@ using System.Linq;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.Model.Core;
 using Fasterflect;
-using PocketXaf.SourcePackages.Base;
-using PocketXaf.SourcePackages.XafApplicationExtensions;
+using XAF.SourcePackages.Base;
+using XAF.SourcePackages.XafApplicationExtensions;
 
-namespace PocketXaf.SourcePackages.ModelExtensions{
+namespace XAF.SourcePackages.ModelExtensions{
     public static class ModelApplicationBaseExtensions {
         public static Platform GetPlatform(this IModelApplication application){
             return ((IModelSources) application).Modules.GetPlatform();

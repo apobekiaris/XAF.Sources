@@ -4,7 +4,7 @@ using System.Reactive.Linq;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Editors;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Services{
+namespace XAF.SourcePackages.System.Reactive.Services{
     public static class DetailViewExtensions{
         public static IObservable<Frame> FrameAssigned(this IObservable<DetailView> source){
             var rootFrames = RxApp.FrameAssignedToController.ViewChanged().Where(tuple => tuple.frame.View.IsRoot).Select(tuple => tuple.frame);

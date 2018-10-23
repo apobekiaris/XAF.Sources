@@ -4,10 +4,10 @@ using DevExpress.ExpressApp.Templates;
 using DevExpress.ExpressApp.Win.SystemModule;
 using DevExpress.ExpressApp.Win.Templates;
 using DevExpress.XtraBars.Docking2010.Views;
-using PocketXaf.SourcePackages.ActiveViewDocumentController;
+using XAF.SourcePackages.ActiveViewDocumentController;
 
-namespace PocketXaf.Win.SourcePackages.ActiveViewDocumentController.Win{
-    public class ActiveDocumentViewController:PocketXaf.SourcePackages.ActiveViewDocumentController.ActiveDocumentViewController{
+namespace XAF.Win.SourcePackages.ActiveViewDocumentController.Win{
+    public class ActiveDocumentViewController:XAF.SourcePackages.ActiveViewDocumentController.ActiveDocumentViewController{
 
         protected override void OnActivated(){
             base.OnActivated();

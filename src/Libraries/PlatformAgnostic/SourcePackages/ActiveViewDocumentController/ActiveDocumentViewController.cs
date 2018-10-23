@@ -1,7 +1,7 @@
 ﻿using System;
 using DevExpress.ExpressApp;
 
-namespace PocketXaf.SourcePackages.ActiveViewDocumentController{
+namespace XAF.SourcePackages.ActiveViewDocumentController{
     public class ActiveViewChangedEventArgs : EventArgs {
         public View View{ get; }
 

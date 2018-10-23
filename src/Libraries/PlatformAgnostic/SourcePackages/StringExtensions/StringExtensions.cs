@@ -9,7 +9,7 @@ using System.Xml;
 using System.Xml.Linq;
 using Fasterflect;
 
-namespace PocketXaf.SourcePackages.StringExtensions {
+namespace XAF.SourcePackages.StringExtensions {
     /// <summary>
     /// Summary description for StringHelper.
     /// </summary>

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlatformAgnostic", "Libraries\PlatformAgnostic\PlatformAgnostic.csproj", "{098F1159-5992-4906-AA8E-8B7E5DC69637}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAF", "Libraries\PlatformAgnostic\XAF.csproj", "{098F1159-5992-4906-AA8E-8B7E5DC69637}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.Module", "TestApplication\TestApplication.Module\TestApplication.Module.csproj", "{5F15837D-D1E5-44DC-92F0-4F2EBE9C3F8D}"
 EndProject
@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.Web", "Test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication.Win", "TestApplication\TestApplication.Win\TestApplication.Win.csproj", "{D05D93DF-312D-4D4E-B980-726871EC7833}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win", "Libraries\Win\Win.csproj", "{9B9735EC-1452-4220-8943-1C62B987BD93}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XAF.Win", "Libraries\Win\XAF.Win.csproj", "{9B9735EC-1452-4220-8943-1C62B987BD93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

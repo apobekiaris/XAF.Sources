@@ -9,7 +9,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Services.Actions{
+namespace XAF.SourcePackages.System.Reactive.Services.Actions{
     [ModelAbstractClass]
     public interface IModelColumnUpdateSelectionMember:IModelColumn{
         [Category("eXpand")]

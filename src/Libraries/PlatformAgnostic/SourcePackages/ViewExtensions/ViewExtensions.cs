@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Security;
 using DevExpress.ExpressApp;
-using PocketXaf.SourcePackages.FrameExtensions;
+using XAF.SourcePackages.FrameExtensions;
 
-namespace PocketXaf.SourcePackages.ViewExtensions{
+namespace XAF.SourcePackages.ViewExtensions{
     [SecuritySafeCritical]
     public static class ViewExtensions {
         public static bool Fits(this View view,ViewType viewType=ViewType.Any,Nesting nesting=Nesting.Any,Type objectType=null) {

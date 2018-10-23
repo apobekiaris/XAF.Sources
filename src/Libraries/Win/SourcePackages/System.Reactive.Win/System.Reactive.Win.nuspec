@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>PocketXaf.System.Reactive.Win</id>
-    <version>2.0.0.0</version>
+    <id>DevExpress.XAF.System.Reactive.Win</id>
+    <version>1.0.0.0</version>
     <authors>Apostolos Bekiaris</authors>
     <owners>eXpandFramework</owners>
     <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
@@ -11,11 +11,11 @@
     <description>System.Reactive.Win</description>
     <tags>DevExpress XAF</tags>
     <dependencies>
-      <dependency id="PocketXaf.System.Reactive" version="2.0.0.0" />
+      <dependency id="DevExpress.XAF.System.Reactive" version="1.0.0.0" />
       <dependency id="System.Reactive" version="4.1.2" />
     </dependencies>
   </metadata>
   <files>
-    <file src="*.cs" target="content\App_Packages\PocketXaf.System.Reactive.$version$" />
+    <file src="*.cs" target="content\App_Packages\XAF.System.Reactive.$version$" />
   </files>
 </package>

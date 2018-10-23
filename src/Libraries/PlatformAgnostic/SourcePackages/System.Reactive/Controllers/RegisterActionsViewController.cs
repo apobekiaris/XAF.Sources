@@ -3,7 +3,7 @@ using System.Reactive.Subjects;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Controllers{
+namespace XAF.SourcePackages.System.Reactive.Controllers{
     public class RegisterActionsViewController:ViewController{
         static readonly ReplaySubject<Func<RegisterActionsViewController, ActionBase[]>> Subject=new ReplaySubject<Func<RegisterActionsViewController, ActionBase[]>>();
         public RegisterActionsViewController(){

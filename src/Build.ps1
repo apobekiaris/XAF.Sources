@@ -14,7 +14,7 @@ task ChangeAssemblyInfo {
 
 task Compile {
     exec {
-        & $msbuild .\PocketXaf.sln /fl
+        & $msbuild .\Xaf.sln /fl
         if (! $?) { throw "compile failed" }
     }
 }
@@ -22,7 +22,7 @@ task Compile {
 task Clean{
     exec{
         if ($cleanBin){
-            & $msbuild .\PocketXaf.sln /t:Clean /fl
+            & $msbuild .\Xaf.sln /t:Clean /fl
             if (! $?) { throw "clean failed" }
             if (Test-Path $nugetBin){
                 Remove-Item $nugetBin -Force -Recurse

@@ -4,10 +4,10 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl.PermissionPolicy;
 using DevExpress.Xpo;
-using PocketXAF.ActionsPermissions.BusinessObjects;
-using PocketXAF.ActionsPermissions.Interfaces;
+using XAF.ActionsPermissions.BusinessObjects;
+using XAF.ActionsPermissions.Interfaces;
 
-namespace PocketXAF.ActionsPermissions.BaseImpl
+namespace XAF.ActionsPermissions.BaseImpl
 {
 	[NavigationItem]
 	[ModelDefault(nameof(IModelClass.Caption), "Roles")]

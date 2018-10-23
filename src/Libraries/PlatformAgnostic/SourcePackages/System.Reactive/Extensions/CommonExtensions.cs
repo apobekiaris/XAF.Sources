@@ -5,7 +5,7 @@ using System.Reactive.Concurrency;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Extensions{
+namespace XAF.SourcePackages.System.Reactive.Extensions{
     public static class CommonExtensions{
         public static IConnectableObservable<T> BufferUntilSubscribed<T>(this IObservable<T> source) {
             return new BufferUntilSubscribedObservable<T>(source, Scheduler.Immediate);

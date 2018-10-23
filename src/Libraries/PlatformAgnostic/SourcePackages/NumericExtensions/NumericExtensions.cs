@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PocketXaf.SourcePackages.NumericExtensions{
+namespace XAF.SourcePackages.NumericExtensions{
     /// <summary>
     /// Summary description for NumericHelper.
     /// </summary>

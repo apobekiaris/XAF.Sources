@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PocketXaf.SourcePackages.OneTimeMethod
+namespace XAF.SourcePackages.OneTimeMethod
 {
     [AttributeUsage(AttributeTargets.Method)]
     public sealed class OneTimeMethodAttribute : Attribute

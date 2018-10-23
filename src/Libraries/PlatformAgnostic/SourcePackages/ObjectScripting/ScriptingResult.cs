@@ -1,6 +1,6 @@
 ﻿using DevExpress.ExpressApp.DC;
 
-namespace PocketXaf.SourcePackages.ObjectScripting
+namespace XAF.SourcePackages.ObjectScripting
 {
     [DomainComponent]
     public class ScriptingResult

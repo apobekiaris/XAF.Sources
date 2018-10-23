@@ -3,9 +3,9 @@ using System.Reactive.Linq;
 using System.Windows.Forms;
 using DevExpress.ExpressApp.Utils;
 using DevExpress.ExpressApp.Win;
-using PocketXaf.SourcePackages.System.Reactive.Extensions;
+using XAF.SourcePackages.System.Reactive.Extensions;
 
-namespace PocketXaf.Win.SourcePackages.System.Reactive.Win.Services{
+namespace XAF.Win.SourcePackages.System.Reactive.Win.Services{
     public static class WinApplicationExtensions{
 
         public static IObservable<(T view, StatusUpdatingEventArgs e)> WhenStatusUpdating<T>(this T view) where T : WinApplication{

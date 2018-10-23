@@ -6,9 +6,9 @@ using DevExpress.ExpressApp.Actions;
 using DevExpress.ExpressApp.Model;
 using DevExpress.ExpressApp.SystemModule;
 using Fasterflect;
-using PocketXaf.SourcePackages.ModelExtensions;
+using XAF.SourcePackages.ModelExtensions;
 
-namespace PocketXaf.SourcePackages.FrameExtensions{
+namespace XAF.SourcePackages.FrameExtensions{
     public static class FrameExtensions {
 
         public static void CleanDetailView(this Frame frame) {

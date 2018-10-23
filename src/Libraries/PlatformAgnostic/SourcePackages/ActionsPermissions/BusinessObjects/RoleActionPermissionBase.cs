@@ -4,9 +4,9 @@ using DevExpress.ExpressApp.Model;
 using DevExpress.Persistent.Base;
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
-using PocketXAF.ActionsPermissions.Interfaces;
+using XAF.ActionsPermissions.Interfaces;
 
-namespace PocketXAF.ActionsPermissions.BusinessObjects
+namespace XAF.ActionsPermissions.BusinessObjects
 {
 	[DefaultListViewOptions(true, NewItemRowPosition.Top)]
 	public abstract class RoleActionPermissionBase : BaseObject, IRoleActionPermission

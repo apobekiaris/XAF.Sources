@@ -2,7 +2,7 @@
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 
-namespace PocketXaf.SourcePackages.OneTimeMethod
+namespace XAF.SourcePackages.OneTimeMethod
 {
     public class OneTimeMethodExecuteInfo : BaseObject
     {

@@ -4,7 +4,7 @@ using System.Reflection;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Updating;
 
-namespace PocketXaf.SourcePackages.OneTimeMethod
+namespace XAF.SourcePackages.OneTimeMethod
 {
     public abstract class ModuleUpdaterBase : ModuleUpdater
     {

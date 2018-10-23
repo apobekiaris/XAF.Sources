@@ -6,7 +6,7 @@ using DevExpress.ExpressApp.Win.Templates.Bars.Utils;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
 
-namespace PocketXaf.Win.SourcePackages.ImmediateDateActionExecute
+namespace XAF.Win.SourcePackages.ImmediateDateActionExecute
 {
     public class WinImmediateDateActionExecuteController : Controller
     {

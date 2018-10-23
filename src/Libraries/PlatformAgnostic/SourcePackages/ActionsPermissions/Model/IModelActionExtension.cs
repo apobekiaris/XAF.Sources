@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PocketXAF.ActionsPermissions.Model
+namespace XAF.ActionsPermissions.Model
 {
     public interface IModelActionExtension
     {

@@ -12,7 +12,7 @@ using DevExpress.Xpo;
 using DevExpress.Xpo.Metadata;
 using Fasterflect;
 
-namespace PocketXaf.SourcePackages.TypeInfoExtensions{
+namespace XAF.SourcePackages.TypeInfoExtensions{
     public static class TypesInfoExtensions {
         public static IEnumerable<ITypeInfo> BaseInfos(this ITypeInfo typeInfo) {
             var baseInfo = typeInfo.Base;

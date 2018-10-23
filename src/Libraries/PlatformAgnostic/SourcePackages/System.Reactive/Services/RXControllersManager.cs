@@ -4,7 +4,7 @@ using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Core;
 using DevExpress.ExpressApp.Model;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Services{
+namespace XAF.SourcePackages.System.Reactive.Services{
     public class RXControllersManager : ControllersManager{
         static readonly Subject<Controller> ControllersSubject=new Subject<Controller>();
         public static IObservable<Controller> ControllersCreated=ControllersSubject;

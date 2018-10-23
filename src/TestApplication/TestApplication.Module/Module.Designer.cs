@@ -32,7 +32,7 @@
 			this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Dashboards.DashboardsModule));
 			this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.Validation.ValidationModule));
 			this.RequiredModuleTypes.Add(typeof(DevExpress.ExpressApp.ViewVariantsModule.ViewVariantsModule));
-            this.RequiredModuleTypes.Add(typeof(PocketXAF.ActionsPermissions.ActionsPermissionsModule));
+            this.RequiredModuleTypes.Add(typeof(XAF.ActionsPermissions.ActionsPermissionsModule));
 		}
 
 		#endregion

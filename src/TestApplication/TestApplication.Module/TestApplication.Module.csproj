@@ -148,9 +148,9 @@
     <Content Include="Welcome.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Libraries\PlatformAgnostic\PlatformAgnostic.csproj">
+    <ProjectReference Include="..\..\Libraries\PlatformAgnostic\XAF.csproj">
       <Project>{098f1159-5992-4906-aa8e-8b7e5dc69637}</Project>
-      <Name>PlatformAgnostic</Name>
+      <Name>XAF</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

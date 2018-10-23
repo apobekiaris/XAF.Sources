@@ -1,7 +1,7 @@
 using DevExpress.Persistent.BaseImpl;
 using DevExpress.Xpo;
 
-namespace PocketXAF.ActionsPermissions.BusinessObjects
+namespace XAF.ActionsPermissions.BusinessObjects
 {
     [NonPersistent]
     public class SecurableActionInfo : BaseObject

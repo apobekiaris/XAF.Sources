@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("-")]
 [assembly: AssemblyProduct("TestApplication.Win")]
-[assembly: AssemblyCopyright("Copyright © - 2007")]
+[assembly: AssemblyCopyright("Copyright © - 2007 eXpandFramework")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

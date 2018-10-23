@@ -4,10 +4,11 @@ using System.Reactive.Linq;
 using System.Threading;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Actions;
-using PocketXaf.SourcePackages.System.Reactive.Controllers;
-using PocketXaf.SourcePackages.System.Reactive.Extensions;
+using XAF.SourcePackages.ActiveViewDocumentController;
+using XAF.SourcePackages.System.Reactive.Controllers;
+using XAF.SourcePackages.System.Reactive.Extensions;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Services{
+namespace XAF.SourcePackages.System.Reactive.Services{
 
     public static class RxApp{
         private static XafApplication _xafApplication;

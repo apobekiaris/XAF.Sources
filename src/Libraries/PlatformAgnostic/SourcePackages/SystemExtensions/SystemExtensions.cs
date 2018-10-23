@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using PocketXaf.SourcePackages.NumericExtensions;
+using XAF.SourcePackages.NumericExtensions;
 
-namespace PocketXaf.SourcePackages.SystemExtensions{
+namespace XAF.SourcePackages.SystemExtensions{
     public static class SystemExtensions{
         public static bool IsDefault<T> (this T value) where T : struct {
             return (EqualityComparer<T>.Default.Equals(value, default));

@@ -18,12 +18,12 @@ using DevExpress.Xpo.DB;
 using DevExpress.Xpo.DB.Exceptions;
 using DevExpress.Xpo.DB.Helpers;
 using Fasterflect;
-using PocketXaf.SourcePackages.Base;
-using PocketXaf.SourcePackages.StreamExtensions;
-using PocketXaf.SourcePackages.SystemExtensions;
-using PocketXaf.SourcePackages.TypeInfoExtensions;
+using XAF.SourcePackages.Base;
+using XAF.SourcePackages.StreamExtensions;
+using XAF.SourcePackages.SystemExtensions;
+using XAF.SourcePackages.TypeInfoExtensions;
 
-namespace PocketXaf.SourcePackages.XafApplicationExtensions{
+namespace XAF.SourcePackages.XafApplicationExtensions{
     public static class XafApplicationExtensions {
 
         static  XafApplicationExtensions() {

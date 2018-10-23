@@ -13,7 +13,7 @@ using DevExpress.ExpressApp.Model.Core;
 using DevExpress.ExpressApp.Model.DomainLogics;
 using DevExpress.ExpressApp.Model.NodeGenerators;
 using DevExpress.Persistent.BaseImpl;
-using PocketXaf.Win.SourcePackages.ImmediateDateActionExecute;
+using XAF.Win.SourcePackages.ImmediateDateActionExecute;
 
 namespace TestApplication.Module.Win
 {

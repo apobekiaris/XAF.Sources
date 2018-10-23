@@ -6,7 +6,7 @@ using DevExpress.ExpressApp.DC;
 using DevExpress.ExpressApp.Updating;
 using DevExpress.ExpressApp.Xpo;
 using DevExpress.Persistent.BaseImpl;
-using PocketXaf.SourcePackages.ObjectScripting;
+using XAF.SourcePackages.ObjectScripting;
 
 namespace TestApplication.Module
 {

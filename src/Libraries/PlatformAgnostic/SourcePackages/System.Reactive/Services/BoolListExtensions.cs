@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Reactive.Linq;
 using DevExpress.ExpressApp.Utils;
-using PocketXaf.SourcePackages.System.Reactive.Extensions;
+using XAF.SourcePackages.System.Reactive.Extensions;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Services{
+namespace XAF.SourcePackages.System.Reactive.Services{
     public static class BoolListExtensions{
 
         public static IObservable<(BoolList boolList, BoolValueChangedEventArgs e)> WhenResultValueChanged(

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Reactive.Linq;
 using DevExpress.ExpressApp;
-using PocketXaf.SourcePackages.System.Reactive.Extensions;
+using XAF.SourcePackages.System.Reactive.Extensions;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Services{
+namespace XAF.SourcePackages.System.Reactive.Services{
     public static class XafApplicationExtensions{
         public static IObservable<(XafApplication, CreateCustomObjectSpaceProviderEventArgs e)> WhenCreateCustomObjectSpaceProvider(this XafApplication application){
             return Observable

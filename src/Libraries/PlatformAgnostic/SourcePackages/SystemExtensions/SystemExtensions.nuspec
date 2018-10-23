@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
   <metadata>
-    <id>PocketXaf.SystemExtensions</id>
-    <version>2.0.0.0</version>
+    <id>DevExpress.XAF.SystemExtensions</id>
+    <version>1.0.0.0</version>
     <authors>Apostolos Bekiaris</authors>
     <owners>eXpandFramework</owners>
     <licenseUrl>https://github.com/SenDevGmbH/XafTools/blob/master/LICENSE</licenseUrl>
@@ -11,10 +11,10 @@
     <description>SystemExtensions</description>
     <tags>DevExpress XAF</tags>
     <dependencies>
-      <dependency id="PocketXaf.NumericExtensions" version="2.0.0.0" />
+      <dependency id="DevExpress.XAF.NumericExtensions" version="1.0.0.0" />
     </dependencies>
   </metadata>
   <files>
-    <file src="**\*.cs" target="content\App_Packages\PocketXaf.SystemExtensions.$version$" />
+    <file src="**\*.cs" target="content\App_Packages\XAF.SystemExtensions.$version$" />
   </files>
 </package>

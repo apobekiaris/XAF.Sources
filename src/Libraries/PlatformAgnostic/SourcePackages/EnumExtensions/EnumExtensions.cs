@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using Fasterflect;
 
-namespace PocketXaf.SourcePackages.EnumExtensions {
+namespace XAF.SourcePackages.EnumExtensions {
     public static class EnumExtensions {
         public static bool IsPowerOfTwo(this int value) {
             return (value & (value - 1)) == 0;

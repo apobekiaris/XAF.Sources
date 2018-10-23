@@ -5,10 +5,10 @@ using System.Reactive.Linq;
 using DevExpress.ExpressApp;
 using DevExpress.ExpressApp.Editors;
 using DevExpress.Utils.Extensions;
-using PocketXaf.SourcePackages.System.Reactive.Extensions;
-using PocketXaf.SourcePackages.ViewExtensions;
+using XAF.SourcePackages.System.Reactive.Extensions;
+using XAF.SourcePackages.ViewExtensions;
 
-namespace PocketXaf.SourcePackages.System.Reactive.Services{
+namespace XAF.SourcePackages.System.Reactive.Services{
     public static class ViewExtensions{
         public static IObservable<(T view, EventArgs e)> WhenControlsCreated<T>(this T view) where T : View{
             return Observable.Return(view).ControlsCreated();

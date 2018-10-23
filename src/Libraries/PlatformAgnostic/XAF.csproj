@@ -7,8 +7,8 @@
     <ProjectGuid>{098F1159-5992-4906-AA8E-8B7E5DC69637}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PocketXaf</RootNamespace>
-    <AssemblyName>PlatformAgnostic</AssemblyName>
+    <RootNamespace>XAF</RootNamespace>
+    <AssemblyName>XAF</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

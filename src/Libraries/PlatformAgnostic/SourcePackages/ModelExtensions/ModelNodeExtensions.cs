@@ -18,11 +18,11 @@ using DevExpress.Persistent.Base;
 using DevExpress.Xpo.Metadata;
 using Fasterflect;
 using MoreLinq.Extensions;
-using PocketXaf.SourcePackages.ConvertExtensions;
-using PocketXaf.SourcePackages.FrameExtensions;
-using PocketXaf.SourcePackages.TypeInfoExtensions;
+using XAF.SourcePackages.ConvertExtensions;
+using XAF.SourcePackages.FrameExtensions;
+using XAF.SourcePackages.TypeInfoExtensions;
 
-namespace PocketXaf.SourcePackages.ModelExtensions{
+namespace XAF.SourcePackages.ModelExtensions{
     public static class ModelNodeExtensions {
         public static IEnumerable<IModelPropertyEditor> GetModelPropertyEditors(this IModelDetailView modelDetailView){
             var modelPropertyEditors = modelDetailView.Items.OfType<IModelPropertyEditor>();

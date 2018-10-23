@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DevExpress.Persistent.Base;
 
-namespace PocketXAF.ActionsPermissions.Interfaces
+namespace XAF.ActionsPermissions.Interfaces
 {
 	public interface IRoleActionPermission
 	{

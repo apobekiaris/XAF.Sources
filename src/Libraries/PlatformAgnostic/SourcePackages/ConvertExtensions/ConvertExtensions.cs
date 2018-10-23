@@ -5,11 +5,11 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 using Fasterflect;
-using PocketXaf.SourcePackages.EnumExtensions;
-using PocketXaf.SourcePackages.StringExtensions;
+using XAF.SourcePackages.EnumExtensions;
+using XAF.SourcePackages.StringExtensions;
 using Point = System.Windows.Point;
 
-namespace PocketXaf.SourcePackages.ConvertExtensions{
+namespace XAF.SourcePackages.ConvertExtensions{
     public static class ConvertExtensions {
         private const string ImplicitOperatorMethodName = "op_Implicit";
         private const string ExplicitOperatorMethodName = "op_Explicit";
