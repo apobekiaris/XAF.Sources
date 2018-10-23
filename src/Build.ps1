@@ -79,6 +79,7 @@ Task PackNuspec{
 }
 Task DiscoverMSBuild{
     Exec{
+        Write-Host "msbuild=$msbuild"
         if (!$msbuild){
             $script:msbuild=(FindMSBuild)
         }
