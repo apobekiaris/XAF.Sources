@@ -6,6 +6,7 @@ properties {
     $nuspecFiles=$null
     $msbuild=$null
     $cleanBin=$null
+    $nugetApiKey=$null
 }
 
 task ChangeAssemblyInfo {
@@ -14,7 +15,7 @@ task ChangeAssemblyInfo {
 
 task Compile {
     exec {
-        & $msbuild .\Xaf.sln /fl
+        & $script:msbuild .\Xaf.sln /fl
         if (! $?) { throw "compile failed" }
     }
 }
@@ -22,7 +23,7 @@ task Compile {
 task Clean{
     exec{
         if ($cleanBin){
-            & $msbuild .\Xaf.sln /t:Clean /fl
+            & $script:msbuild .\Xaf.sln /t:Clean /fl
             if (! $?) { throw "clean failed" }
             if (Test-Path $nugetBin){
                 Remove-Item $nugetBin -Force -Recurse
@@ -79,11 +80,21 @@ Task PackNuspec{
 Task DiscoverMSBuild{
     Exec{
         if (!$msbuild){
-            $msbuild=FindMSBuild
+            $script:msbuild=(FindMSBuild)
         }
     }
 }
-task default  -depends DiscoverMSBuild,Clean ,Compile ,UpdateNuspecMetadata,PackNuspec
+Task PublishNuget{
+    Exec{
+        if ($nugetApiKey){
+            Get-ChildItem -Path $nugetBin -Filter *.nupkg|foreach{
+                & $nugetExe push $_ $nugetApiKey -source https://api.nuget.org/v3/index.json
+            }
+        }
+    }
+}
+
+task default  -depends DiscoverMSBuild,Clean ,Compile ,UpdateNuspecMetadata,PackNuspec,PublishNuget
 
 function FindMSBuild() {
     if (!(Get-Module -ListAvailable -Name VSSetup)) {
