@@ -7,32 +7,30 @@ properties {
     $msbuild=$null
     $cleanBin=$null
     $nugetApiKey=$null
+    $build=$true
 }
 
 task ChangeAssemblyInfo {
     
 }
 
-task Compile {
+task Compile -precondition {return $build} {
     exec {
         & $script:msbuild .\Xaf.sln /fl
         if (! $?) { throw "compile failed" }
     }
 }
 
-task Clean{
+task Clean -precondition {return $cleanBin}{
     exec{
-        if ($cleanBin){
-            & $script:msbuild .\Xaf.sln /t:Clean /fl
-            if (! $?) { throw "clean failed" }
-            if (Test-Path $nugetBin){
-                Remove-Item $nugetBin -Force -Recurse
-            }
+        & $script:msbuild .\Xaf.sln /t:Clean /fl
+        if (! $?) { throw "clean failed" }
+        if (Test-Path $nugetBin){
+            Remove-Item $nugetBin -Force -Recurse
         }
-        
-        
     }
 }
+
 Task VersionDependencies{
     Exec{
         $nuspecFiles | ForEach-Object{
@@ -90,12 +88,12 @@ Task DiscoverMSBuild{
         }
     }
 }
-Task PublishNuget{
+Task PublishNuget -precondition{
+    return $nugetApiKey
+}{
     Exec{
-        if ($nugetApiKey){
-            Get-ChildItem -Path $nugetBin -Filter *.nupkg|foreach{
-                & $nugetExe push $_.FullName $nugetApiKey -source https://api.nuget.org/v3/index.json
-            }
+        Get-ChildItem -Path $nugetBin -Filter *.nupkg|foreach{
+            & $nugetExe push $_.FullName $nugetApiKey -source https://api.nuget.org/v3/index.json
         }
     }
 }

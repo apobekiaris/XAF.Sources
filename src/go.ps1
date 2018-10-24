@@ -8,7 +8,16 @@ param(
     [string]
     $msbuild=$null,
     [string]
-    $nugetApiKey=$null
+    $nugetApiKey=$null,
+    [bool]$build=$false,
+    [bool]$cleanBin=$false
 )
 Import-Module ..\tools\psake\psake.psm1
-Invoke-psake .\Build.ps1 -properties @{"nuspecFiles"=$nuspecFiles;"version"=$version;"cleanBin"=($filter -eq "*.nuspec");"msbuild"=$msbuild;"nugetApiKey"=$nugetApiKey}
+Invoke-psake .\Build.ps1 -properties @{
+    "nuspecFiles"=$nuspecFiles;
+    "version"=$version;
+    "cleanBin"=(($filter -eq "*.nuspec") -and $cleanBin);
+    "msbuild"=$msbuild;
+    "nugetApiKey"=$nugetApiKey;
+    "build"=$build
+}
