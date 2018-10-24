@@ -59,6 +59,8 @@ Task  UpdateNuspecMetadata -depends VersionDependencies {
         $nuspecFiles | ForEach-Object{
             $xml=[xml](Get-Content -path $_.FullName)
             $xml.SelectSingleNode("//version").InnerText=$version
+            $xml.SelectSingleNode("//licenseUrl").InnerText="https://github.com/eXpandFramework/XAF/blob/master/LICENSE"
+            $xml.SelectSingleNode("//projectUrl").InnerText="https://github.com/eXpandFramework/XAF"
             $description=$xml.SelectSingleNode("//description").InnerText
             if ($description -eq $null){
                 $xml.SelectSingleNode("//description").InnerText=$_   

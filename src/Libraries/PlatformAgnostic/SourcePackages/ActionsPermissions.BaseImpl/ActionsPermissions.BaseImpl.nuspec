@@ -5,8 +5,8 @@
     <version>1.0.0.0</version>
     <authors>Sergej Derjabkin</authors>
     <owners>SenDev GmbH</owners>
-    <licenseUrl>http://www.sendev.de</licenseUrl>
-    <projectUrl>http://www.sendev.de</projectUrl>
+    <licenseUrl>https://github.com/eXpandFramework/XAF/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/eXpandFramework/XAF</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Permissions for Actions</description>
     <dependencies>
