@@ -1,4 +1,5 @@
 Framework "4.6"
+. ..\tools\Invoke-InParallel.ps1
 properties {
     $nugetExe="$PSScriptRoot\..\tools\Nuget.exe"
     $nugetBin="$PSScriptRoot\..\bin\nuget\"
@@ -56,7 +57,6 @@ Task  UpdateNuspecMetadata -depends VersionDependencies {
     exec{
         $nuspecFiles | ForEach-Object{
             $xml=[xml](Get-Content -path $_.FullName)
-            # $xml.SelectSingleNode("//version").InnerText=$version
             $xml.SelectSingleNode("//licenseUrl").InnerText="https://github.com/eXpandFramework/XAF/blob/master/LICENSE"
             $xml.SelectSingleNode("//projectUrl").InnerText="https://github.com/eXpandFramework/XAF"
             $description=$xml.SelectSingleNode("//description").InnerText
@@ -71,10 +71,15 @@ Task  UpdateNuspecMetadata -depends VersionDependencies {
 Task PackNuspec{
     Exec{
         New-Item $nugetBin -ItemType Directory -Force
-        $nuspecFiles|ForEach-Object{
-            & $nugetExe pack $_.FullName -version $version -OutputDirectory $nugetBin -Basepath $_.DirectoryName
+        $paramObject = [pscustomobject] @{
+            version=$version
+            nugetBin=$nugetBin
+            nugetExe=$nugetExe
         }
-        
+        Invoke-InParallel -InputObject $nuspecFiles -Parameter $paramObject -runspaceTimeout 30  -ScriptBlock {  
+            Write-Host "a=$($_.FullName)"
+            & $parameter.nugetExe pack $_.FullName -version $parameter.version -OutputDirectory $parameter.nugetBin -Basepath $_.DirectoryName
+        }
     }
 }
 Task DiscoverMSBuild{

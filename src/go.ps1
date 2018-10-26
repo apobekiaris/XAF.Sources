@@ -17,6 +17,8 @@ param(
     $cleanBin=$true
 )
 Import-Module ..\tools\psake\psake.psm1
+
+
 Invoke-psake .\Build.ps1 -properties @{
     "nuspecFiles"=$nuspecFiles;
     "version"=$version;
