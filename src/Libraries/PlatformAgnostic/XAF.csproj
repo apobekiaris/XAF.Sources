@@ -32,28 +32,29 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v18.1" />
-    <Reference Include="DevExpress.ExpressApp.Security.v18.1">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\DevExpressBuild\bin\Debug\DevExpress.ExpressApp.Security.v18.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.ExpressApp.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Data.v18.2" />
+    <Reference Include="DevExpress.ExpressApp.Security.v18.2">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.v18.2, Version=18.2.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v18.1">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\DevExpressBuild\bin\Debug\DevExpress.Persistent.Base.v18.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Security.Xpo.v18.2, Version=18.2.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.ExpressApp.Xpo.v18.2, Version=18.2.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+    <Reference Include="DevExpress.Persistent.Base.v18.2">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v18.2, Version=18.2.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.2.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Fasterflect, Version=2.1.3.0, Culture=neutral, PublicKeyToken=38d18473284c1ca7, processorArchitecture=MSIL">
@@ -142,6 +143,7 @@
     <Compile Include="Packages\System.Reactive\Services\ControllerExtensions.cs" />
     <Compile Include="Packages\System.Reactive\Services\DetailViewExtensions.cs" />
     <Compile Include="Packages\System.Reactive\Services\FrameExtensions.cs" />
+    <Compile Include="Packages\System.Reactive\Services\ListPropertyEditorExtensions.cs" />
     <Compile Include="Packages\System.Reactive\Services\ObjectSpaceExtensions.cs" />
     <Compile Include="Packages\System.Reactive\Services\RXApp.cs" />
     <Compile Include="Packages\System.Reactive\Services\RXControllersManager.cs" />
@@ -163,11 +165,15 @@
     <None Include="Packages\ActionsPermissions.BaseImpl\ActionsPermissions.BaseImpl.nuspec" />
     <None Include="Packages\ActionsPermissions\ActionsPermissions.nuspec" />
     <None Include="Packages\ActiveViewDocumentController\ActiveDocumentViewController.nuspec" />
-    <None Include="Packages\Base\Base.nuspec" />
+    <None Include="Packages\Base\Base.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Packages\ConvertExtensions\ConvertExtensions.nuspec" />
     <None Include="Packages\EnumExtensions\EnumExtensions.nuspec" />
     <None Include="Packages\FrameExtensions\FrameExtensions.nuspec" />
-    <None Include="Packages\ModelExtensions\ModelExtensions.nuspec" />
+    <None Include="Packages\ModelExtensions\ModelExtensions.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Packages\NumericExtensions\NumericExtensions.nuspec" />
     <None Include="Packages\OneTimeMethod\OneTimeMethod.nuspec" />
     <None Include="Packages\StreamExtensions\StreamExtensions.nuspec" />

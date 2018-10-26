@@ -30,11 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.ExpressApp.v18.1" />
-    <Reference Include="DevExpress.ExpressApp.Win.v18.1" />
-    <Reference Include="DevExpress.Utils.v18.1" />
-    <Reference Include="DevExpress.XtraBars.v18.1" />
-    <Reference Include="DevExpress.XtraEditors.v18.1" />
+    <Reference Include="DevExpress.ExpressApp.v18.2" />
+    <Reference Include="DevExpress.ExpressApp.Win.v18.2" />
+    <Reference Include="DevExpress.Data.v18.2" />
+    <Reference Include="DevExpress.Utils.v18.2" />
+    <Reference Include="DevExpress.XtraBars.v18.2" />
+    <Reference Include="DevExpress.XtraEditors.v18.2" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Reactive, Version=4.1.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
@@ -60,15 +61,19 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Packages\ActiveViewDocumentController.Win\ActiveDocumentViewController.cs" />
-    <Compile Include="Packages\ImmediateDateActionExecute\WinImmediateDateActionExecuteController.cs" />
+    <Compile Include="Packages\ActiveViewDocumentController\ActiveDocumentViewController.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Packages\ImmediateDateActionExecute\WinImmediateDateActionExecuteController.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Packages\System.Reactive.Win\Services\WinApplicationExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Packages\ActiveViewDocumentController.Win\ActiveDocumentViewController.Win.nuspec" />
+    <None Include="Packages\ActiveViewDocumentController\ActiveDocumentViewController.nuspec" />
     <None Include="Packages\ImmediateDateActionExecute\WinImmediateDateActionController.nuspec" />
     <None Include="Packages\System.Reactive.Win\System.Reactive.Win.nuspec" />
   </ItemGroup>
