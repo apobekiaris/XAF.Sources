@@ -12,6 +12,6 @@
     <tags>XAF</tags>
   </metadata>
   <files>
-    <file src="**\*.cs" target="content\App_Packages\XAF.ActionsPermissions.SourcePackage" />
+    <file src="**\*.cs" target="content\XAF_Packages\ActionsPermissions.SourcePackage" />
   </files>
 </package>

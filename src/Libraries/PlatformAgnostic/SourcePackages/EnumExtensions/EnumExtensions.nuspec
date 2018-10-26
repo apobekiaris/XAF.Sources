@@ -12,6 +12,6 @@
     <tags>DevExpress XAF</tags>
   </metadata>
   <files>
-    <file src="**\*.cs" target="content\App_Packages\XAF.EnumExtensions" />
+    <file src="**\*.cs" target="content\XAF_Packages\EnumExtensions" />
   </files>
 </package>

@@ -15,6 +15,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="**\*.cs" target="content\App_Packages\XAF.SystemExtensions" />
+    <file src="**\*.cs" target="content\XAF_Packages\SystemExtensions" />
   </files>
 </package>

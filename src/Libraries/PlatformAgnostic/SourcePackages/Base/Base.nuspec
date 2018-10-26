@@ -12,6 +12,6 @@
     <tags>DevExpress XAF</tags>
   </metadata>
   <files>
-    <file src="**\*.cs" target="content\App_Packages\XAF.Base" />
+    <file src="**\*.cs" target="content\XAF_Packages\Base" />
   </files>
 </package>

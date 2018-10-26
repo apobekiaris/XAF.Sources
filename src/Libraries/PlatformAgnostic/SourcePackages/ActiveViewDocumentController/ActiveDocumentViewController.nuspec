@@ -12,6 +12,6 @@
     <tags>DevExpress XAF</tags>
   </metadata>
   <files>
-    <file src="**\*.cs" target="content\App_Packages\XAF.ActiveDocumentViewController" />
+    <file src="**\*.cs" target="content\XAF_Packages\ActiveDocumentViewController" />
   </files>
 </package>
