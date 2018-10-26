@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>DevExpress.XAF.System.Reactive</id>
-    <version>1.0.0.0</version>
+    <version>$version$</version>
     <authors>Apostolos Bekiaris</authors>
     <owners>eXpandFramework</owners>
     <licenseUrl>https://github.com/eXpandFramework/XAF/blob/master/LICENSE</licenseUrl>
@@ -11,11 +11,11 @@
     <description>System.Reactive</description>
     <tags>DevExpress XAF</tags>
     <dependencies>
-      <dependency id="DevExpress.XAF.XafApplicationExtensions" version="1.0.0.0" />
+      <dependency id="DevExpress.XAF.ApplicationExtensions" version="$version$" />
       <dependency id="System.Reactive" version="4.1.2" />
     </dependencies>
   </metadata>
   <files>
-    <file src="**\*.cs" target="content\App_Packages\XAF.System.Reactive.$version$" />
+    <file src="**\*.cs" target="content\App_Packages\XAF.System.Reactive" />
   </files>
 </package>

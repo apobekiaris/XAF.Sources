@@ -16,6 +16,8 @@ task ChangeAssemblyInfo {
 
 task Compile -precondition {return $build} {
     exec {
+        & $script:msbuild .\Xaf.sln /t:Clean /fl
+        if (! $?) { throw "clean failed" }
         & $script:msbuild .\Xaf.sln /fl
         if (! $?) { throw "compile failed" }
     }
@@ -23,8 +25,6 @@ task Compile -precondition {return $build} {
 
 task Clean -precondition {return $cleanBin}{
     exec{
-        & $script:msbuild .\Xaf.sln /t:Clean /fl
-        if (! $?) { throw "clean failed" }
         if (Test-Path $nugetBin){
             Remove-Item $nugetBin -Force -Recurse
         }
@@ -56,7 +56,7 @@ Task  UpdateNuspecMetadata -depends VersionDependencies {
     exec{
         $nuspecFiles | ForEach-Object{
             $xml=[xml](Get-Content -path $_.FullName)
-            $xml.SelectSingleNode("//version").InnerText=$version
+            # $xml.SelectSingleNode("//version").InnerText=$version
             $xml.SelectSingleNode("//licenseUrl").InnerText="https://github.com/eXpandFramework/XAF/blob/master/LICENSE"
             $xml.SelectSingleNode("//projectUrl").InnerText="https://github.com/eXpandFramework/XAF"
             $description=$xml.SelectSingleNode("//description").InnerText
@@ -88,9 +88,7 @@ Task DiscoverMSBuild{
         }
     }
 }
-Task PublishNuget -precondition{
-    return $nugetApiKey
-}{
+Task PublishNuget -precondition{return $nugetApiKey}{
     Exec{
         Get-ChildItem -Path $nugetBin -Filter *.nupkg|foreach{
             & $nugetExe push $_.FullName $nugetApiKey -source https://api.nuget.org/v3/index.json

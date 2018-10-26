@@ -173,7 +173,9 @@
     <None Include="SourcePackages\NumericExtensions\NumericExtensions.nuspec">
       <SubType>Designer</SubType>
     </None>
-    <None Include="SourcePackages\OneTimeMethod\OneTimeMethod.nuspec" />
+    <None Include="SourcePackages\OneTimeMethod\OneTimeMethod.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="SourcePackages\StreamExtensions\StreamExtensions.nuspec">
       <SubType>Designer</SubType>
     </None>

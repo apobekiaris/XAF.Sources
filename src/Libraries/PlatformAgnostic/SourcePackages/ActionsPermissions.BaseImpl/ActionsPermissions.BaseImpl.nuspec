@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>DevExpress.XAF.ActionsPermissions.BaseImpl.SourcePackage</id>
-    <version>1.0.0.0</version>
+    <version>$version$</version>
     <authors>Sergej Derjabkin</authors>
     <owners>SenDev GmbH</owners>
     <licenseUrl>https://github.com/eXpandFramework/XAF/blob/master/LICENSE</licenseUrl>
@@ -15,6 +15,6 @@
     <tags>XAF</tags>
   </metadata>
   <files>
-    <file src="**\*.cs" target="content\App_Packages\XAF.ActionsPermissions.BaseImpl.SourcePackage.$version$" />
+    <file src="**\*.cs" target="content\App_Packages\XAF.ActionsPermissions.BaseImpl.SourcePackage" />
   </files>
 </package>

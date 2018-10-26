@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>DevExpress.XAF.ActiveDocumentViewController.Win</id>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <authors>Apostolos Bekiaris</authors>
     <owners>eXpandFramework</owners>
     <licenseUrl>https://github.com/eXpandFramework/XAF/blob/master/LICENSE</licenseUrl>

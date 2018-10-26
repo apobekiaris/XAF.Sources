@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>DevExpress.XAF.ViewExtensions</id>
-    <version>1.0.0.0</version>
+    <version>$version$</version>
     <authors>Apostolos Bekiaris</authors>
     <owners>eXpandFramework</owners>
     <licenseUrl>https://github.com/eXpandFramework/XAF/blob/master/LICENSE</licenseUrl>
@@ -11,10 +11,10 @@
     <description>ViewExtensions</description>
     <tags>DevExpress XAF</tags>
     <dependencies>
-      <dependency id="DevExpress.XAF.FrameExtensions" version="1.0.0.0" />
+      <dependency id="DevExpress.XAF.FrameExtensions" version="$version$" />
     </dependencies>
   </metadata>
   <files>
-    <file src="**\*.cs" target="content\App_Packages\XAF.ViewExtensions.$version$" />
+    <file src="**\*.cs" target="content\App_Packages\XAF.ViewExtensions" />
   </files>
 </package>

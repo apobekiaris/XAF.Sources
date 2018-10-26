@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>DevExpress.XAF.OneTimeMethod.SourcePackage</id>
-    <version>1.0.0.0</version>
+    <version>$version$</version>
     <authors>Sergej Derjabkin</authors>
     <owners>SenDev GmbH</owners>
     <licenseUrl>https://github.com/eXpandFramework/XAF/blob/master/LICENSE</licenseUrl>
@@ -12,6 +12,6 @@
     <tags>DevExpress XAF</tags>
   </metadata>
   <files>
-    <file src="**\*.cs" target="content\App_Packages\XAF.OneTimeMethod.SourcePackage.$version$" />
+    <file src="**\*.cs" target="content\App_Packages\XAF.OneTimeMethod.SourcePackage" />
   </files>
 </package>
