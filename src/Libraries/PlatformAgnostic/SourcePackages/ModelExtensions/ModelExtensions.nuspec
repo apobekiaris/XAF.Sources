@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/eXpandFramework/XAF</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>ModelExtensions</description>
-    <tags>DevExpress XAF</tags>
+    <tags>DevExpress XAF,eXpandFramework</tags>
     <dependencies>
       <dependency id="DevExpress.XAF.ConvertExtensions" version="$version$" />
       <dependency id="DevExpress.XAF.FrameExtensions" version="$version$" />

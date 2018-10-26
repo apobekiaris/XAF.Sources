@@ -9,7 +9,7 @@
     <projectUrl>https://github.com/eXpandFramework/XAF</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>TypeInfoExtensions</description>
-    <tags>DevExpress XAF</tags>
+    <tags>DevExpress XAF,eXpandFramework</tags>
   </metadata>
   <files>
     <file src="**\*.cs" target="content\XAF_Packages\TypeInfoExtensions" />
