@@ -1,6 +1,6 @@
 param(
     [string]
-    $version="1.0.0.1",
+    $version="1.0.0.2",
     [string[]]
     # $include=@("*SystemEx*.nuspec","Numeric*.nuspec"),
     $include=@("*.nuspec"),
@@ -12,7 +12,7 @@ param(
     [string]
     $nugetApiKey=$null,
     [bool]
-    $build=$true,
+    $build=$false,
     [bool]
     $cleanBin=$true
 )
