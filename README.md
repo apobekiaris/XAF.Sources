@@ -3,6 +3,11 @@
 [![GitHub issues](https://img.shields.io/github/issues/eXpandFramework/xaf.svg)](https://github.com/eXpandFramework/xaf/issues)
 [![GitHub forks](https://img.shields.io/github/forks/eXpandFramework/xaf.svg)](https://github.com/eXpandFramework/xaf/network)
 
+**Help needed.**
+
+[Installing a Win package creates duplicate code](https://github.com/eXpandFramework/XAF/issues/17)
+
+[Dependency compilation errors](https://github.com/eXpandFramework/XAF/issues/16)
 
 # Introduction
 
